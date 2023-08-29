@@ -18,7 +18,7 @@
 
     </header>
 
-    <form class="myform1">
+    <form class="myform1" id="myform1">
         <fieldset>
             <div class="fieldset-wrapper">
                 <legend>Informações pessoais</legend>
@@ -65,17 +65,17 @@
                 <div class="horarios">
                 <div class="fieldset-wrapper">
                 <label for="date">Data <span>(dd/mm/aaaa)</span></label>
-                <input type="date" name="date" id="date" required>
+                <input type="text" onfocus="(this.type = 'date')" placeholder="" name="date" id="date" required>
                 </div>
 
                 <div class="fieldset-wrapper">
                 <label for="das1">Das</label>    
-                <input type="time" name="das" id="das" required>
+                <input type="text" onfocus="(this.type = 'time')" placeholder="" name="das" id="das" required>
                 </div>
                 
                 <div class="fieldset-wrapper">
                 <label for="ate1">Até</label>
-                <input type="time" name="ate" id="ate" required>
+                <input type="text" onfocus="(this.type = 'time')" placeholder="" name="ate" id="ate" required>
                 </div>
                 </div>
             </div>
@@ -88,17 +88,17 @@
                 <div class="horarios">
                     <div class="fieldset-wrapper">
                     <label for="date2">Data <span>(dd/mm/aaaa)</span></label>
-                    <input type="date" name="date2" id="date2" required>
+                    <input type="text" onfocus="(this.type = 'date')" placeholder="" name="date2" id="date2">
                     </div>
     
                     <div class="fieldset-wrapper">
                     <label for="das2">Das</label>    
-                    <input type="time" name="das2" id="das2" required>
+                    <input type="text" onfocus="(this.type = 'time')" placeholder="" name="das2" id="das2">
                     </div>
                     
                     <div class="fieldset-wrapper">
                     <label for="ate2">Até</label>
-                    <input type="time" name="ate2" id="ate2" required>
+                    <input type="text" onfocus="(this.type = 'time')" placeholder="" name="ate2" id="ate2">
                     </div>
                     </div>
                 </div>

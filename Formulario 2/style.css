@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before{
+    content: '';
+    background-color: #293241;
+    width: 100%;
+    height: 465px;
+    position: absolute;
+    z-index: -1;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #BFD7E4;;
+    position: relative;
+}
+
+h1{
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding-top: 110px;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+span{
+    color: #C1BCCC;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+label{
+    color: #4E4958;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.page{
+    margin: 0 auto;
+    width: 750px;
+}
+
+
+
+.imagem{
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+/*form::before{
+    content: '';
+    width: 750px;
+    height: 133px;
+    background-color: #F67669;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    z-index: 0;
+
+}*/
+
+.myform1{
+    background-color: white;
+    padding: 64px;
+    border-radius: 20px 20px 20px 20px;
+   /* position: relative;*/
+    
+   
+}
+
+.nome-inteiro{
+    width: 300px;
+    height: 56px;
+    display: flex;
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.nome, .sobrenome, .date{
+    width: 300px;
+    height: 56px;   
+}
+
+.first-legend{
+    margin-bottom: 50px;
+    color: green;
+    border: none;
+}
+
+legend{
+    color: #253B51;
+    font-family: Staatliches;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; 
+    border-bottom: solid 1px #E6E6F0;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+
+input,select,textarea{
+    border-radius: 8px;
+    border: 1px solid var(--back-lines-in-white, #E6E6F0);
+    background: var(--shapes-02, #FAFAFC);
+    display: flex;
+    padding-left: 5px;
+}
+
+select,input[type="date"]{
+    width: 300px;
+    height: 56px;
+
+}
+
+.checkbox-container{
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.checkbox-container > label{
+    padding-left: 5px;
+    display: flex;
+    text-align: center;
+    gap: 8px;
+}
+
+.checkbox-container input{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+
+.checkbox-container label::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--back-lines-in-white, #E6E6F0);
+    background: var(--shapes-02, #FAFAFC);
+    
+}
+
+.checkbox-container input:checked + label::before{
+    background-color: #293241;
+}
+
+.checkbox-container input:focus + label::before{
+    outline: 2px solid #293241;
+}
+
+
+input[type="email"]{
+    height: 56px;
+    width: 100%;
+}
+
+select{
+   appearance: none;
+}
+
+.input-container{
+    padding-bottom: 16px;
+}
+
+fieldset{
+    margin-bottom: 16px;
+    border: none;
+}
+
+textarea{
+    width: 608px;
+    height: 167px;
+    resize: none;
+}
+
+.horario{
+    display: flex;
+}
+
+.das,.ate{
+    width: 140px;
+    height: 56px;
+}
+
+.horario div:nth-of-type(1){
+    margin-right: 32px;
+}
+
+.horario div:nth-of-type(2){
+    margin-right: 10px;
+}
+
+.button{
+    color: #FFF;
+    font-family: Staatliches;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    border: none;
+    background: #F67669;
+}
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    width: 622px;
+    height: 51px;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #F67669;
+}
+
+
+
+
+
+
