@@ -61,31 +61,31 @@ label{
     width: 750px;
 }
 
-
-
 .imagem{
     text-align: center;
     padding-bottom: 32px;
 }
 
-/*form::before{
-    content: '';
-    width: 750px;
-    height: 133px;
-    background-color: #F67669;
-    border-radius: 20px 20px 0px 0px;
-    position: absolute;
-    z-index: 0;
 
-}*/
+form::before{
+    content: '';
+    width: 100%;
+    height: 117px;
+    display: block;
+    background-color: #f67669;
+    border-radius: 20px 20px 0 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
 .myform1{
     background-color: white;
-    padding: 64px;
+    padding: 50px 64px;
     border-radius: 20px 20px 20px 20px;
-   /* position: relative;*/
-    
-   
+    position: relative; 
 }
 
 .nome-inteiro{
@@ -103,7 +103,7 @@ label{
 
 .first-legend{
     margin-bottom: 50px;
-    color: green;
+    color: white;
     border: none;
 }
 
@@ -117,6 +117,9 @@ legend{
     border-bottom: solid 1px #E6E6F0;
     text-align: center;
     margin-bottom: 32px;
+
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -131,7 +134,6 @@ input,select,textarea{
 select,input[type="date"]{
     width: 300px;
     height: 56px;
-
 }
 
 .checkbox-container{
@@ -155,15 +157,13 @@ select,input[type="date"]{
     opacity: 0;
 }
 
-
 .checkbox-container label::before{
     content: '';
     width: 24px;
     height: 24px;
     border-radius: 8px;
     border: 1px solid var(--back-lines-in-white, #E6E6F0);
-    background: var(--shapes-02, #FAFAFC);
-    
+    background: var(--shapes-02, #FAFAFC);    
 }
 
 .checkbox-container input:checked + label::before{
@@ -173,7 +173,6 @@ select,input[type="date"]{
 .checkbox-container input:focus + label::before{
     outline: 2px solid #293241;
 }
-
 
 input[type="email"]{
     height: 56px;
